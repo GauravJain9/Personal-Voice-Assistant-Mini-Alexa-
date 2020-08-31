@@ -14,7 +14,10 @@ Connected.
 SOFTWARE DETAILS(RUNNING_CODE):
 After successful connection, the devices are ready to transmit data. For that
 1) Install the Raspbian OS from https://www.raspberrypi.org .
+
 2)It will have the IDLE software present in it 
+
 3)Write the code on it given in the code section of this rar file.
+
 4)Run the python code and start giving voice commands.
 NOTE: Make sure that the voice recognition feature is enabled on the laptop.
