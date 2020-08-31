@@ -1,0 +1,157 @@
+Problem Statement:
+To design a fully automated home automation system which runs and operates by giving voice commands and can control hardware and software components.
+INTRODUCTION:
+The basic idea behind this project is to create a simple stand-alone application
+that helps less tech savvy people in the world to use the computer without feeling ignorant or computer illiterate.
+Computers have became a very important devices and as well as less expensive over time.
+The application works same like Siri/ Google Assistant etc. But the application deals with the computer itself mainly.
+The U.I of the application is self-explanatory and minimal.
+Currently it takes text as input as most of the people are not very good at speaking.
+The Uses of Voice Assistants:
+Many devices we use every day utilize voice assistants. They’re on our smartphones and inside smart speakers in our homes. Many mobile apps and operating systems use them. Additionally, certain technology in cars, as well as in retail, education, healthcare, and telecommunications environments, can be operated by voices.
+The Growth of Voice Assistants:
+Technology is constantly advancing and changing, and the voice assistant market will progress along with it. In April 2015, the research firm Gartner predicted that by the end of 2018, 30 percent of interactions with technology would be through “conversations” with smart machines, many of them by voice.Between 2016 and 2024, the market share for the technology will grow at an annual rate of almost 35 percent. More and more sectors of the economy, like healthcare and the automotive industry, are finding uses for the speech recognition technology in addition to those found in devices like smart speakers and phones.
+
+MOTIVATION:
+
+1) For most of us, the ultimate luxury would be an assistant who always listens for your call, anticipates your every need, and takes action when necessary. That luxury is now available thanks to artificial intelligence assistants, aka voice assistants.
+
+2)Voice assistants come in somewhat small packages and can perform a variety of actions after hearing a wake word or command. They can turn on lights, answer questions, play music, place online orders, etc.
+
+3)As voice assistants become more robust, their utility in both the personal and business realms will grow as well.
+
+Implementation :
+
+ 
+WORKING:
+First, when the user starts the system, he uses a microphone to send in the input. Basically, what it does is that it takes sound input from the user and it is fed to the computer to process it further. Then, that sound input if fed to the speech to text converter, which converts audio input to text output which is recognizable by the computer and can also be processed by it. Then that text is parsed and searched for keywords. Our voice command system is built around the system of keywords where it searches the text for key words to match. And once key words are matched then it gives the relevant output. This output is in the form of text. This is then converted to speech output using a text to speech converter which involves using an optical character recognition system. OCR categorizes and identifies the text and then the text to speech engine converts it to the audio output. This output is transmitted via the speakers which are connected to the audio jack of the raspberry pi
+
+
+COMPONENTS DESCRIPTION(HARDWARE MODULES):
+
+1.Raspberry pi:
+
+The Raspberry Pi is a series of small Single-board-computer developed in the United Kingdom by the Raspberry Pi Foundation to promote teaching of basic Computer Science in schools and in developing countries.The original model became far more popular than anticipated,selling outside its target market for uses such as robotic. It does not include peripherals (such as keyboards and mice) or cases. However, some accessories have been included in several official and unofficial bundles.
+The organisation behind the Raspberry Pi consists of two arms. The first two models were developed by the Raspberry Pi Foundation. After the Pi Model B was released, the Foundation set up Raspberry Pi Trading, to develop the third model, the B+. Raspberry Pi Trading is responsible for developing the technology while the Foundation is an educational charity to promote the teaching of basic computer science in schools and in developing countries.
+
+ 
+2.USB CABLE:
+
+Universal Serial Bus (USB) is an industry standard that establishes specifications for cables and connectors and protocols for connection, communication and power supply between computers, peripheral devices and other computers.
+
+USB was designed to standardize the connection of peripherals to personal computers, both to communicate with and to supply electric power. It has largely replaced interfaces such as serial ports and parallel ports, and has become commonplace on a wide range of devices.USB connectors have been increasingly replacing other types for battery chargers of portable devices.
+ 
+
+3.USB MICROPHONE:
+A microphone, colloquially named mic or mike  is a device – a transducer – that converts sound into electric signals. Microphones are used in many applications such as telephones, hearing aids, public address systems for concert halls and public events, motion picture production, live and recorded audio engineering, sound recording, two-ways, radios, megaphones, radio and television broadcasting, and in computers for recording voice, speech recognition, VoIP, and for non-acoustic purposes such as ultrasonic sensors or knock sensors.
+ 
+
+
+4. 9V BATTERY:
+
+The nine-volt battery, or 9-volt battery, is a common size of battery that was introduced for the early tranistor radios. It has a rectangular prism shape with rounded edges and a polarized snap connector at the top. This type is commonly used in walkie-talkies, clocks and smoke detectors.
+The nine-volt battery format is commonly available in primary carbon-zinc and alkaline chemistry, in primary lithium iron disulfide, and in rechargeable form in nickel-cadmium, nickel-metal hydride and lithium-ion. Mercury-oxide batteries of this format, once common, have not been manufactured in many years due to their mercury content. 
+ 
+
+5.LED:
+
+A light-emitting diode (LED) is a semicondoctor light source that emits light when current flows through it. Electrons in the semiconductor recombine with electron holes, releasing energy in the form of photons. The color of the light (corresponding to the energy of the photons) is determined by the energy required for electrons to cross the band gap of the semiconductor.White light is obtained by using multiple semiconductors or a layer of light-emitting phosphor on the semiconductor device.
+ 
+8. BUZZER:
+
+A buzzer or beeper is an audio signalling device, which may be mechanical, electromechanical, or piezoelectric (piezo for short). Typical uses of buzzers and beepers include alarm,devices, timers, and confirmation of user input such as a mouse click or keystroke.
+ 
+
+
+
+COMPONENTS DESCRIPTION (SOFTWARE MODULE):
+
+1. PYTHON IDLE(VERSION 2.7):
+IDLE (short for Integrated DeveLopment Environment or Integrated Development and Learning Environment) is an Integrated development environment for Python, which has been bundled with the default implementation of the language since 1.5.2b1. It is packaged as an optional part of the Python packaging with many Linux Distributions. It is completely written in Python and the Tkinter GUI toolkit.IDLE is intended to be a simple IDE and suitable for beginners, especially in an educational environment. To that end, it is cross-platform, and avoids feature clutter.
+ 
+
+2.SPEECH RECOGNITION LIBRARY :
+
+Speech Recognition is an important feature in several applications used such as home automation, artificial intelligence, etc. This article aims to provide an introduction on how to make use of the SpeechRecognition library of Python. This is useful as it can be used on microcontrollers such as Raspberri Pis with the help of an external microphone.
+ 
+
+3.PYAUDIO LIBRARY :
+
+PYAudio is an open source computer library for audio playback and recording. It is a ccross-platform library, so programs using it can run on many different computer operating systems, including Windows, Mac OS Xand Linux. PortAudio supports Core Audio, ALSA, and MME, Direct Sound, ASIO and WASAPI on Windows. Like other libraries whose primary goal is portability, PortAudio is written in the C programming language. It has also been implemented in PureBasic, and Lazarus/FreePascal languages. PortAudio is based on a callback paradigm, similar to JACK and ASIO.
+ 
+4.TIME LIBRARY :
+
+Python's time module provides a function for getting local time from the number of seconds elapsed since the epoch called localtime() . Notice that tm_isdst=0 . Since DST matters with local time, tm_isdst will change between 0 and 1 depending on whether or not DST is applicable for the given time.
+ 
+5.Python Algorithm:
+a)Detect Voice Input
+b)Change in Text
+c)Compare To Phrases
+d)Assign Respective Value To Data To Be Sent
+e)Declare Pins and PinMode
+f)Check For Serial Availability Of Data
+g)Compare The Received Data
+h)Perfom Respective Action
+
+Experimentation and Result(Screenshots)(More provided in video section):
+
+CIRCUIT ON BREADBOARD
+ 
+Raspbian OS (IDLE):
+ 
+Customer/User speaking saying the command:
+ 
+Speaker giving the output i.e. doing the tas:
+ 
+
+CONCLUSION:
+In this project "personal voice assistant" we can speak give command through a mic and then the speaker will resond or will do the task. As we have used raspberry pi as an hardware everything is done in raspbian OS. Presently it can successfully perform:
+1) Open the subreddit in the browser.
+2) Open any website in the browser.
+3) Send an email to your contacts.
+4) Launch any system application.
+5) Tells you the current weather and temperature of almost any city
+6) Tells you the current time.
+7) Greetings
+8) Play you a song on VLC media player(of course you need to have VLC media player installed in your laptop/desktop)
+9) Tells you latest news feeds.
+10) Tells you about almost anything you ask.
+11) Opening a given URL
+12) showing any google searh and speaking also
+13) Making notes in a particular directory of the device to which the raspberry is connected
+14) Call or message via GSM
+15) Turning on and off the lights 
+16) Turn on or off all to turn on everything that is connected to the breadboard and many more such things.
+It is very much helpful to the blind people who just can give the commands/ask questions.
+FUTURE WORK:
+When the string “turn on AC” is detected by the code, it will send the string as “*turn on AC#”. So, the actual message received by the Bluetooth Module is in the format of “*Message#”. The reason for padding the ‘*’ and ‘#’ at the begging and end of the string is to identify the starting and ending of the message.
+We are able to delete the ‘#’ from the string but left out the ‘*’ in order to identify the starting of the string. The received message is compared with some predefined strings and if the message matches with any of them, then corresponding action like turning on or turning off the load happens.
+We have used the following commands: “turn on light”, “turn off light”,“turn on all” and “turn off all”.
+REFERENCES:
+http://www.raspbian.org
+http://www.google.com
+http://www.youtube.com
+http://www.wikipedia.com
+http://stevenhickson.blogspot.com
+https://pipy.org
+APPENDIX:
+Sample Codes:(ss):
+ 
+ 
+ 
+ 
+
+
+
+
+Sites Visited(Main):
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
